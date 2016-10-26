@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<title>Homework-week-4</title>
+<style type="text/css">
+
+
+body {
+	background-color: lightblue;
+	font-family: 'Indie Flower', cursive;
+
+
+}
+h1 {
+	background-color: rgb(176,207,182);
+	margin-right: 80%;
+	text-align: center;
+
+}
+
+.paragraph {
+	color: black;
+	background-color: rgb(176,207,182);
+	
+	margin-right: 70%;
+	text-align: center;
+
+}
+.rn {
+	background-color: rgb(176,207,182);
+	margin-right: 80%;
+
+
+}
+
+.wl {
+	background-color: rgb(176,207,182);
+	margin-right: 70%;
+
+
+}
+#blue_diamond{
+
+}
+
+.score {
+	background-color: rgb(176,207,182);
+	margin-right: 70%;
+}
+.un {
+	background-color: rgb(176,207,182);
+	margin-right: 80%;
+}
+#demo {
+	font-family: sans-serif;
+	font-size: 20px;
+}
+
+
+
+
+</style>
+</head>
+	<body>
+		
+		
+	
+		<h1>CrystalsCollector!</h1>
+	
+
+		<div class="paragraph">
+			<p>You will be given a random number.</p>
+			<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points.</p>
+			<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+			<p>The value of each crystal is hidden from you until you click on it.</p>
+			<p>Each time when the game starts, the game will change the values of each crystal.</p>
+		</div>
+
+	<div class ="rn" >
+		<p>Random number</p>
+		<p id="demo"></p>
+	</div>
+
+		<div class="wl">
+			<p>Wins:</p>
+			<p>Losses:</p>
+		</div>
+		
+				
+		<div class="image-container">
+			<div class="row">	
+					<button onclick="myFunction()">B<img style="background-color: white; " src="http://www.clipartbest.com/cliparts/di6/eRM/di6eRM6rT.png" width="200" height="200" alt="blue_diamond" ></button>
+					<button onclick="myFunction()">M<img style="background-color: white; " src="http://www.clipartbest.com/cliparts/ncB/7kG/ncB7kG84i.png" width="200" height="200" alt="magenta_diamond"></button>
+					<button onclick="myFunction()">D<img style="background-color: white; " src="https://lh5.ggpht.com/n_8TPSj8QDt7Akecv8TvDuhuzDWgtkMnplWslN9duE7r4B_B49XJbXskQvfhp3FuB-9Q=w300" width="200" height="200" alt="diamond_diamond"></button>
+					<button onclick="myFunction()">R<img style="background-color: white; " src="http://www.clker.com/cliparts/Z/S/z/U/T/g/gem-hi.png" width="200" height="200" alt="red_diamond"></button>
+			</div>	
+				
+			
+		</div>
+
+	<div class="score">
+		<p>Your total score is:</p>
+	</div>
+
+	<div class="un">
+		<p>user number</p>
+		<input type="number" id="myNumber" value="0">
+		
+	</div>
+
+	<script type="text/javascript">
+			
+			document.getElementById("demo").innerHTML = Math.floor(Math.random() * 40);
+
+			function myFunction() {
+    		document.getElementById("myNumber").value = "16";
+}
+		</script>
+	</body>
+</html>
